@@ -1,0 +1,18 @@
+
+os.pullEvent = os.pullEventRaw
+MDP = ("TDB")
+read = read("*")
+if read = MDP then
+print("Accès Autorisé")
+redstone.setOutput("left",true")
+sleep(2)
+redstone.setOutput("left",false)
+os.reboot()
+elseif read = ("Autres mot de passe") then
+print("Accès autorisée")
+ 
+else
+print("Accès refuser")
+sleep(1)
+os.reboot()
+end
